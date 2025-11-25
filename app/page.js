@@ -7,65 +7,49 @@ export default function Home() {
   return (
     <div className="pt-32 fade-in">
 
-      {/* HERO */}
-      <section className="section text-center">
-        <Reveal>
-          <h1 className="text-6xl font-extrabold mb-6 gradient-title">
-            Monsieur Le Méchant & Son Chat Messique
-          </h1>
-        </Reveal>
+      {/* HERO — Texte à gauche, image à droite */}
+<section className="section flex flex-col md:flex-row items-center justify-between gap-12">
 
-        <Reveal>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-         “Bienvenue dans le royaume officiel de Monsieur Le Méchant™ —
-un homme tellement taquin qu’on devrait lui délivrer un permis spécial pour éviter d’en assommer des innocents.”
+  {/* Texte à gauche */}
+  <Reveal>
+    <div className="md:w-1/2">
+      <h1 className="text-5xl md:text-6xl font-extrabold gradient-title mb-6">
+        Monsieur Le Méchant™ & Messi le Juge Blanc
+      </h1>
 
-Ici, vous entrez dans le territoire d’un individu légendairement imprévisible :
-l’homme aux 3M : Maroc, Marseille… et Ma…
-(ne demandez pas la fin, il ne répond jamais, il fait juste un sourire suspect).
+      <p className="text-gray-300 text-lg leading-relaxed">
+        <span className="italic text-[#FFD56B]">
+          “Bienvenue dans le royaume officiel de Monsieur Le Méchant™ — 
+          un homme tellement taquin qu’on devrait lui délivrer un permis spécial
+          pour éviter d’en assommer des innocents.” 
+        </span>
+        <br /><br />
+        Ici, vous entrez dans le territoire d’un individu légendairement imprévisible : 
+        <span className="text-[#FFD56B]"> l’homme aux 3M : Maroc, Marseille… et Ma…</span>  
+        (la fin n’a jamais été clarifiée).
+        <br /><br />
+        Heureusement, il n’est jamais seul : 
+        <span className="text-[#FFD56B]"> Messi, son chat blanc, maître du jugement silencieux, </span>
+        veille sur vous… et vous juge probablement en ce moment même.
+      </p>
+    </div>
+  </Reveal>
 
-Chaque phrase de Monsieur Le Méchant est calibrée avec la précision d’un sniper :
-trop rapide pour être évitée, trop piquante pour être ignorée.
-Certains disent qu’il est méchant.
-Lui, il dit qu’il est réaliste.
-La vérité est quelque part entre les deux… mais personne n’ose trancher.
+  {/* Image à droite */}
+  <Reveal>
+    <div className="md:w-1/2 flex justify-center">
+      <Image 
+        src="/messi.jpeg" 
+        width={380}
+        height={380}
+        alt="Chat Messi"
+        className="rounded-3xl shadow-2xl float"
+      />
+    </div>
+  </Reveal>
 
-Heureusement, ou peut-être malheureusement, il n’affronte pas le monde seul.
-Messi, son chat blanc légendairement expressif, est toujours à ses côtés.
+</section>
 
-Ce chat possède un talent extraordinaire :
-juger absolument tout ce que vous faites… surtout vous.
-
-Un regard de Messi peut :
-
-casser votre confiance
-
-dévoiler vos mensonges
-
-vous rappeler vos erreurs de 2017
-
-et vous faire remettre en question votre existence
-
-Ensemble, ils forment un duo mythique :
-un maître de la taquinerie et un chat qui a abandonné depuis longtemps l’idée de le contrôler.
-
-“Je ne suis pas méchant,” répète Monsieur Le Méchant,
-“c’est juste que les gens sont trop sensibles.”
-— Une citation officielle, tatouée dans son âme
-(et peut-être bientôt sur un t-shirt).
-          </p>
-        </Reveal>
-
-        <div className="mt-12 flex justify-center">
-          <Image 
-            src="/messi.jpeg" 
-            width={350}
-            height={350}
-            alt="Chat Messi"
-            className="rounded-3xl shadow-2xl float"
-          />
-        </div>
-      </section>
 
       {/* COUNTERS HUMORISTIQUES */}
       <section className="section grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
@@ -78,4 +62,5 @@ un maître de la taquinerie et un chat qui a abandonné depuis longtemps l’id�
     </div>
   );
 }
+
 
