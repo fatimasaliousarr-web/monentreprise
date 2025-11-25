@@ -40,8 +40,8 @@ export default function Home() {
     <div className="md:w-1/2 flex justify-center">
       <Image 
         src="/messi.jpeg" 
-        width={380}
-        height={380}
+        width={680}
+        height={680}
         alt="Chat Messi"
         className="rounded-3xl shadow-2xl float"
       />
@@ -62,5 +62,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
