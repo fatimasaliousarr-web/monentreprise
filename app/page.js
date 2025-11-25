@@ -58,7 +58,7 @@ un maître de la taquinerie et un chat qui a abandonné depuis longtemps l’id�
 
         <div className="mt-12 flex justify-center">
           <Image 
-            src="/chat-messi.jpg" 
+            src="/messi.jpeg" 
             width={350}
             height={350}
             alt="Chat Messi"
@@ -78,3 +78,4 @@ un maître de la taquinerie et un chat qui a abandonné depuis longtemps l’id�
     </div>
   );
 }
+
