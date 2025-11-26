@@ -6,71 +6,47 @@ import Reveal from "../components/Reveal";
 export default function Home() {
   return (
     <div className="pt-32 fade-in space-y-32">
+{/* HERO — Version premium sans image, avec fond glacier bleu */}
+<section className="relative section py-32 overflow-hidden">
 
-      {/* HERO — Fix spacing, bigger image, wider text */}
-<section className="section flex flex-col md:flex-row items-center gap-10 md:gap-20">
+  {/* BACKGROUND GLACÉ / BLEU GLOW */}
+  <div className="absolute inset-0 bg-gradient-to-br from-[#001228] via-[#00254A] to-[#003C7A] opacity-80"></div>
 
-  {/* TEXTE PLUS LARGE */}
+  <div className="absolute -top-20 -left-40 w-[500px] h-[500px] 
+    bg-blue-500/20 blur-3xl rounded-full"></div>
+
+  <div className="absolute bottom-0 right-0 w-[450px] h-[450px]
+    bg-cyan-400/20 blur-3xl rounded-full"></div>
+
+  {/* TEXTE */}
   <Reveal>
-    <div className="w-full md:w-[55%] space-y-6">
-      <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
-        Construisons le futur avec 
-        <span className="text-[#00AEEF]"> Monsieur Le Méchant™ </span>
-        & son consultant félin, Messi.
+    <div className="relative max-w-3xl mx-auto text-center px-6 z-10">
+      
+      <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
+        Construisons le futur avec <br />
+        <span className="text-[#33AFFF]">Monsieur Le Méchant™</span> <br />
+        & son consultant félin invisible, Messi.
       </h1>
 
-      <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
-        <span className="italic text-[#00AEEF]">
-          “Bienvenue dans l’univers de Monsieur Le Méchant™ — un homme tellement
-          taquin qu’il faudrait un service client juste pour réparer ses dégâts.”
+      <p className="text-gray-300 text-lg mt-10 leading-relaxed max-w-2xl mx-auto">
+        <span className="italic text-[#33AFFF]">
+          “Bienvenue dans l’univers de Monsieur Le Méchant™ — 
+          un homme tellement taquin qu’un service client spécialisé serait nécessaire
+          juste pour gérer les dégâts.”
         </span>
         <br /><br />
-        Leader du “Consulting Taquin™”, il incarne les 
-        <span className="text-[#00AEEF]"> 3M : Maroc, Marseille et Ma… </span>
-        (classified top secret).
-        <br /><br />
-        Accompagné de Messi, chat blanc analyste senior expert en jugement silencieux.
+        Leader du <span className="text-[#33AFFF]">Consulting Taquin™</span>, 
+        il incarne fièrement les 3M :  
+        <span className="text-[#33AFFF]"> Maroc, Marseille… et Mystère.</span>  
+        <br />
+        <span className="text-gray-400 text-sm">(Personne n’a jamais su le troisième.)</span>
       </p>
 
-      <div className="flex gap-4">
-        <button className="px-6 py-3 bg-[#00AEEF] text-black rounded-xl font-semibold shadow-lg hover:bg-[#0095d6] transition">
-          Découvrir →
-        </button>
-        <button className="px-6 py-3 border border-gray-500 text-white rounded-xl font-semibold hover:bg-white/10 transition">
-          Recruter Monsieur Le Méchant
-        </button>
-      </div>
     </div>
   </Reveal>
 
-  {/* IMAGE PLUS GRANDE + COLLEE */}
-  <Reveal>
-  <div className="w-full md:w-[50%] flex justify-end">
-    <div className="w-[380px] md:w-[480px] lg:w-[650px]">
-      <Image 
-        src="/messi.jpeg"
-        alt="Messi le Juge Blanc"
-        width={1000}
-        height={1400}
-        className="
-          rounded-3xl 
-          shadow-2xl 
-          object-cover 
-          w-full 
-          h-[500px] md:h-[650px] lg:h-[800px] 
-          scale-100 
-          hover:scale-105 
-          transition-transform 
-          duration-700 
-          ease-out
-        "
-      />
-    </div>
-  </div>
-</Reveal>
-
-
 </section>
+
 
 
 
@@ -178,5 +154,6 @@ export default function Home() {
     </div>
   );
 }
+
 
 
