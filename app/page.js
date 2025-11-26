@@ -23,13 +23,13 @@ export default function Home() {
     <div className="relative max-w-3xl mx-auto text-center px-6 z-10">
       
       <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
-        Construisons le futur avec <br />
+     
         <span className="text-[#33AFFF]">Monsieur Le Méchant™</span> <br />
       </h1>
 
       <p className="text-gray-300 text-lg mt-10 leading-relaxed max-w-2xl mx-auto">
         <span className="italic text-[#33AFFF]">
-          “Bienvenue dans l’univers de Monsieur Le Méchant™ — 
+          Monsieur Le Méchant™ — 
          On dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le systèmeOn dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le système.”
         </span>
         <br /><br /> 
@@ -149,6 +149,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
