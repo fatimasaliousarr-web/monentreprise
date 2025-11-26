@@ -25,7 +25,6 @@ export default function Home() {
       <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight">
         Construisons le futur avec <br />
         <span className="text-[#33AFFF]">Monsieur Le Méchant™</span> <br />
-        & son consultant félin invisible, Messi.
       </h1>
 
       <p className="text-gray-300 text-lg mt-10 leading-relaxed max-w-2xl mx-auto">
@@ -150,6 +149,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
