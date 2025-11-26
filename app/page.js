@@ -45,16 +45,30 @@ export default function Home() {
 
   {/* IMAGE PLUS GRANDE + COLLEE */}
   <Reveal>
-    <div className="w-full md:w-[45%] flex justify-center">
+  <div className="w-full md:w-[50%] flex justify-end">
+    <div className="w-[380px] md:w-[480px] lg:w-[650px]">
       <Image 
         src="/messi.jpeg"
-        width={900}
-        height={1400}
         alt="Messi le Juge Blanc"
-        className="rounded-3xl shadow-2xl object-cover scale-100 hover:scale-105 transition-transform duration-700 ease-out"
+        width={1000}
+        height={1400}
+        className="
+          rounded-3xl 
+          shadow-2xl 
+          object-cover 
+          w-full 
+          h-[500px] md:h-[650px] lg:h-[800px] 
+          scale-100 
+          hover:scale-105 
+          transition-transform 
+          duration-700 
+          ease-out
+        "
       />
     </div>
-  </Reveal>
+  </div>
+</Reveal>
+
 
 </section>
 
@@ -164,4 +178,5 @@ export default function Home() {
     </div>
   );
 }
+
 
