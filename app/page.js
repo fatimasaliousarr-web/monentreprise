@@ -30,7 +30,7 @@ export default function Home() {
         <br /><br />
         Heureusement, il n’est jamais seul : 
         <span className="text-[#FFD56B]"> Messi, son chat blanc, maître du jugement silencieux, </span>
-        veille sur vous… et vous juge probablement en ce moment même.
+        veille sur vous… et vous juge probablement en ce moment même LOLLLL.
       </p>
     </div>
   </Reveal>
@@ -62,6 +62,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
