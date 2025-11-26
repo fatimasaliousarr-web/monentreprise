@@ -5,70 +5,164 @@ import Reveal from "../components/Reveal";
 
 export default function Home() {
   return (
-    <div className="pt-32 fade-in">
+    <div className="pt-32 fade-in space-y-32">
 
-      {/* HERO — Texte à gauche, image à droite */}
-<section className="section flex flex-col md:flex-row items-center justify-between gap-12">
+      {/* HERO — Style corporate Capgemini */}
+      <section className="section flex flex-col md:flex-row items-center justify-between gap-16">
 
-  {/* Texte à gauche */}
-  <Reveal>
-    <div className="md:w-1/2">
-      <h1 className="text-5xl md:text-6xl font-extrabold gradient-title mb-6">
-        Monsieur Le Méchant™ & Messi le Juge Blanc
-      </h1>
+        {/* Texte */}
+        <Reveal>
+          <div className="md:w-1/2 space-y-6">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
+              Construisons le futur avec 
+              <span className="text-[#00AEEF]"> Monsieur Le Méchant™ </span>
+              & son consultant félin, Messi.
+            </h1>
 
-      <p className="text-gray-300 text-lg leading-relaxed">
-        <span className="italic text-[#FFD56B]">
-          “Bienvenue dans le royaume officiel de Monsieur Le Méchant™ — 
-          un homme tellement taquin qu’on devrait lui délivrer un permis spécial
-          pour éviter d’en assommer des innocents.” 
-        </span>
-        <br /><br />
-        Ici, vous entrez dans le territoire d’un individu légendairement imprévisible : 
-        <span className="text-[#FFD56B]"> l’homme aux 3M : Maroc, Marseille… et Ma…</span>  
-        (la fin n’a jamais été clarifiée).
-        <br /><br />
-        Heureusement, il n’est jamais seul : 
-        <span className="text-[#FFD56B]"> Messi, son chat blanc, maître du jugement silencieux, </span>
-        veille sur vous… et vous juge probablement en ce moment même LOLLLL.
-      </p>
-    </div>
-  </Reveal>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              <span className="italic text-[#00AEEF]">
+                “Bienvenue dans l’univers de Monsieur Le Méchant™ — 
+                un homme tellement taquin qu’il faudrait un service client
+                dédié rien que pour gérer ses dégâts.”
+              </span>
+              <br /><br />
+              Leader autoproclamé du “Consulting Taquin™”, il incarne 
+              <span className="text-[#00AEEF]"> les 3M : Maroc, Marseille et Ma… </span>
+              (confidentiel, niveau très élevé).
+              <br /><br />
+              À ses côtés, son bras droit :
+              <span className="text-[#00AEEF]"> Messi, le chat blanc analyste senior, </span>
+              qui évalue les humains avec un regard 4K HDR.
+            </p>
 
-  {/* Image à droite */}
-  <Reveal>
-    <div className="md:w-1/2 flex justify-center">
-      <Image 
-        src="/messi.jpeg" 
-        width={950}
-        height={1500}
-        alt="Chat Messi"
-        className="rounded-3xl shadow-2xl float"
-      />
-    </div>
-  </Reveal>
+            <div className="flex gap-4">
+              <button className="px-6 py-3 bg-[#00AEEF] text-black rounded-xl font-semibold shadow-lg hover:bg-[#0095d6] transition">
+                Découvrir l’univers →
+              </button>
+              <button className="px-6 py-3 border border-gray-500 text-white rounded-xl font-semibold hover:bg-white/10 transition">
+                Recruter Monsieur Le Méchant
+              </button>
+            </div>
+          </div>
+        </Reveal>
 
-</section>
+        {/* Image */}
+        <Reveal>
+          <div className="md:w-1/2 flex justify-center">
+            <Image 
+              src="/messi.jpeg"
+              width={800}
+              height={1200}
+              alt="Messi le Juge Blanc"
+              className="rounded-3xl shadow-2xl object-cover"
+            />
+          </div>
+        </Reveal>
+
+      </section>
 
 
-      {/* COUNTERS HUMORISTIQUES */}
-      <section className="section grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+      {/* SECTION SERVICES — Style consulting Capgemini */}
+      <section className="section text-center space-y-12">
+        
+        <Reveal>
+          <h2 className="text-4xl font-bold text-white">
+            Nos Domaines d’Intervention
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto">
+            Une offre complète mêlant humour, impact stratégique et jugement félin de haute précision.
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          
+          <Reveal>
+            <div className="bg-white/5 p-8 rounded-2xl shadow-xl hover:bg-white/10 transition">
+              <h3 className="text-2xl font-semibold text-[#00AEEF] mb-4">Consulting Taquin</h3>
+              <p className="text-gray-300">
+                Analyse stratégique des situations où Monsieur Le Méchant peut taquiner avec précision.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-white/5 p-8 rounded-2xl shadow-xl hover:bg-white/10 transition">
+              <h3 className="text-2xl font-semibold text-[#00AEEF] mb-4">Gestion du Stress Félin</h3>
+              <p className="text-gray-300">
+                Messi observe, juge, et optimise votre comportement en fonction de son taux d’agacement.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="bg-white/5 p-8 rounded-2xl shadow-xl hover:bg-white/10 transition">
+              <h3 className="text-2xl font-semibold text-[#00AEEF] mb-4">Transformation Digitale</h3>
+              <p className="text-gray-300">
+                Automatisation, leadership, humour et chaos parfaitement coordonné.
+              </p>
+            </div>
+          </Reveal>
+
+        </div>
+      </section>
+
+
+
+
+      {/* SECTION COMPTEURS */}
+      <section className="section grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+
         <Reveal><AnimatedCounter end={120} label="Personnes taquinées" /></Reveal>
         <Reveal><AnimatedCounter end={350} label="Moments gênants créés" /></Reveal>
         <Reveal><AnimatedCounter end={15} label="Années à râler pour rien" /></Reveal>
         <Reveal><AnimatedCounter end={45} label="Chats témoins de ses bêtises" /></Reveal>
+
+      </section>
+
+
+
+
+      {/* SECTION VALEURS — Style corporate */}
+      <section className="section text-center space-y-12">
+        
+        <Reveal>
+          <h2 className="text-4xl font-bold text-white">Nos Valeurs</h2>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          
+          <Reveal>
+            <div className="p-8 bg-white/5 rounded-2xl">
+              <h3 className="text-2xl font-semibold text-[#00AEEF] mb-4">Imprévisibilité</h3>
+              <p className="text-gray-300">
+                Chaque échange avec Monsieur Le Méchant est une aventure dont personne ne sort indemne.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="p-8 bg-white/5 rounded-2xl">
+              <h3 className="text-2xl font-semibold text-[#00AEEF] mb-4">Innovation</h3>
+              <p className="text-gray-300">
+                Transformer la taquinerie en un moteur de création et de performance.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="p-8 bg-white/5 rounded-2xl">
+              <h3 className="text-2xl font-semibold text-[#00AEEF] mb-4">Jugement Félin</h3>
+              <p className="text-gray-300">
+                Messi, expert en jugement passif-agressif, valide 0.2% des humains rencontrés.
+              </p>
+            </div>
+          </Reveal>
+
+        </div>
+
       </section>
 
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
