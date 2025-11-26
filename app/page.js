@@ -31,15 +31,11 @@ export default function Home() {
       <p className="text-gray-300 text-lg mt-10 leading-relaxed max-w-2xl mx-auto">
         <span className="italic text-[#33AFFF]">
           “Bienvenue dans l’univers de Monsieur Le Méchant™ — 
-          un homme tellement taquin qu’un service client spécialisé serait nécessaire
-          juste pour gérer les dégâts.”
+         On dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le systèmeOn dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le système.”
         </span>
-        <br /><br />
-        Leader du <span className="text-[#33AFFF]">Consulting Taquin™</span>, 
-        il incarne fièrement les 3M :  
-        <span className="text-[#33AFFF]"> Maroc, Marseille… et Mystère.</span>  
+        <br /><br /> 
         <br />
-        <span className="text-gray-400 text-sm">(Personne n’a jamais su le troisième.)</span>
+        <span className="text-gray-400 text-sm">(“I even miss your crazy swear words…”.)</span>
       </p>
 
     </div>
@@ -154,6 +150,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
