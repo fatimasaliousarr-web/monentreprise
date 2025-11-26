@@ -33,8 +33,7 @@ export default function Home() {
          On dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le système.”
         </span>
         <br /><br /> 
-        <br />
-        <span className="text-gray-400 text-sm">(“I even miss your crazy swear words…”.)</span>
+        <span className="text-gray-500 text-sm">(“I even miss your crazy swear words…”.)</span>
       </p>
 
     </div>
@@ -149,6 +148,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
