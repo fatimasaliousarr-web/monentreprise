@@ -30,7 +30,7 @@ export default function Home() {
       <p className="text-gray-300 text-lg mt-10 leading-relaxed max-w-2xl mx-auto">
         <span className="italic text-[#33AFFF]">
           Monsieur Le Méchant™ — 
-         On dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le systèmeOn dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le système.”
+         On dirait qu’on a perdu 12 % de notre connexion amicale. Du coup, j’arrive avec un pain thon magique pour relancer le système.”
         </span>
         <br /><br /> 
         <br />
@@ -149,6 +149,7 @@ export default function Home() {
     </div>
   );
 }
+
 
 
 
