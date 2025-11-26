@@ -27,10 +27,10 @@ export default function AnimatedCounter({ end, label }) {
 
   return (
     <div ref={ref} className="text-center">
-      <p className="text-4xl md:text-5xl font-bold text-[#FFD56B]">
-        {count}<span className="text-[#FFD56B]">+</span>
-      </p>
-      <p className="text-gray-300 mt-2">{label}</p>
-    </div>
+  <p className="text-4xl md:text-5xl font-bold text-[#33AFFF]">
+    {count}<span className="text-[#33AFFF]">+</span>
+  </p>
+  <p className="text-gray-300 mt-2">{label}</p>
+</div>
   );
 }
