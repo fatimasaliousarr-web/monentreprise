@@ -7,59 +7,57 @@ export default function Home() {
   return (
     <div className="pt-32 fade-in space-y-32">
 
-      {/* HERO — Style corporate Capgemini */}
-      <section className="section flex flex-col md:flex-row items-center justify-between gap-16">
+      {/* HERO — Fix spacing, bigger image, wider text */}
+<section className="section flex flex-col md:flex-row items-center gap-10 md:gap-20">
 
-        {/* Texte */}
-        <Reveal>
-          <div className="md:w-1/2 space-y-6">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
-              Construisons le futur avec 
-              <span className="text-[#00AEEF]"> Monsieur Le Méchant™ </span>
-              & son consultant félin, Messi.
-            </h1>
+  {/* TEXTE PLUS LARGE */}
+  <Reveal>
+    <div className="w-full md:w-[55%] space-y-6">
+      <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-white">
+        Construisons le futur avec 
+        <span className="text-[#00AEEF]"> Monsieur Le Méchant™ </span>
+        & son consultant félin, Messi.
+      </h1>
 
-            <p className="text-gray-300 text-lg leading-relaxed">
-              <span className="italic text-[#00AEEF]">
-                “Bienvenue dans l’univers de Monsieur Le Méchant™ — 
-                un homme tellement taquin qu’il faudrait un service client
-                dédié rien que pour gérer ses dégâts.”
-              </span>
-              <br /><br />
-              Leader autoproclamé du “Consulting Taquin™”, il incarne 
-              <span className="text-[#00AEEF]"> les 3M : Maroc, Marseille et Ma… </span>
-              (confidentiel, niveau très élevé).
-              <br /><br />
-              À ses côtés, son bras droit :
-              <span className="text-[#00AEEF]"> Messi, le chat blanc analyste senior, </span>
-              qui évalue les humains avec un regard 4K HDR.
-            </p>
+      <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+        <span className="italic text-[#00AEEF]">
+          “Bienvenue dans l’univers de Monsieur Le Méchant™ — un homme tellement
+          taquin qu’il faudrait un service client juste pour réparer ses dégâts.”
+        </span>
+        <br /><br />
+        Leader du “Consulting Taquin™”, il incarne les 
+        <span className="text-[#00AEEF]"> 3M : Maroc, Marseille et Ma… </span>
+        (classified top secret).
+        <br /><br />
+        Accompagné de Messi, chat blanc analyste senior expert en jugement silencieux.
+      </p>
 
-            <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#00AEEF] text-black rounded-xl font-semibold shadow-lg hover:bg-[#0095d6] transition">
-                Découvrir l’univers →
-              </button>
-              <button className="px-6 py-3 border border-gray-500 text-white rounded-xl font-semibold hover:bg-white/10 transition">
-                Recruter Monsieur Le Méchant
-              </button>
-            </div>
-          </div>
-        </Reveal>
+      <div className="flex gap-4">
+        <button className="px-6 py-3 bg-[#00AEEF] text-black rounded-xl font-semibold shadow-lg hover:bg-[#0095d6] transition">
+          Découvrir →
+        </button>
+        <button className="px-6 py-3 border border-gray-500 text-white rounded-xl font-semibold hover:bg-white/10 transition">
+          Recruter Monsieur Le Méchant
+        </button>
+      </div>
+    </div>
+  </Reveal>
 
-        {/* Image */}
-        <Reveal>
-          <div className="md:w-1/2 flex justify-center">
-            <Image 
-              src="/messi.jpeg"
-              width={800}
-              height={1200}
-              alt="Messi le Juge Blanc"
-              className="rounded-3xl shadow-2xl object-cover"
-            />
-          </div>
-        </Reveal>
+  {/* IMAGE PLUS GRANDE + COLLEE */}
+  <Reveal>
+    <div className="w-full md:w-[45%] flex justify-center">
+      <Image 
+        src="/messi.jpeg"
+        width={900}
+        height={1400}
+        alt="Messi le Juge Blanc"
+        className="rounded-3xl shadow-2xl object-cover scale-100 hover:scale-105 transition-transform duration-700 ease-out"
+      />
+    </div>
+  </Reveal>
 
-      </section>
+</section>
+
 
 
 
@@ -166,3 +164,4 @@ export default function Home() {
     </div>
   );
 }
+
